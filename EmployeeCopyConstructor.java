@@ -20,13 +20,13 @@ public class EmployeeCopyConstructor {
 
     public static void main(String[] args) {
         // Create original object
-        EmployeeCopyConstructor ecc = new EmployeeCopyConstructor(101, "Divya");
+        EmployeeCopyConstructor ecc = new EmployeeCopyConstructor(101, "rahul");
         ecc.printInfo();
 
         
         EmployeeCopyConstructor copy1 = ecc;
             copy1.Emp_id = 2;
-        copy1.Emp_name = "Shubhi";
+        copy1.Emp_name = "Saurabh";
 
         copy1.printInfo();
         ecc.printInfo(); 
@@ -36,10 +36,11 @@ public class EmployeeCopyConstructor {
                 copy2.printInfo();
 
         copy2.Emp_id = 200;
-        copy2.Emp_name = "Preeti";
+        copy2.Emp_name = "Ravi";
 
         
         copy2.printInfo();
         ecc.printInfo(); 
     }
 }
+
